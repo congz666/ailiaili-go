@@ -1,6 +1,3 @@
-# Golang Fast CRUD
-
-## 项目地址[ailiaili](http://www.xiaosiro.cn)
 
 ## 目的
 
@@ -18,14 +15,6 @@
 6. [Gin-Cors](https://github.com/gin-contrib/cors): Gin框架提供的跨域中间件
 7. 自行实现了国际化i18n的一些基本功能
 8. 本项目是使用基于cookie实现的session来保存登录状态的，如果需要可以自行修改为token验证
-
-本项目已经实现了一些常用的代码方便参考和复用:
-
-1. 实现了```/api/v1/user/register```用户注册接口
-2. 实现了```/api/v1/user/login```用户登录接口
-3. 实现了```/api/v1/user/me```用户资料接口(需要登录后获取session)
-4. 实现了```/api/v1/user/logout```用户登出接口(需要登录后获取session)
-5. ......
 
 本项目已经预先创建了一系列文件夹划分出下列模块:
 
@@ -51,20 +40,6 @@ SESSION_SECRE="" # Seesion密钥，必须设置而且不要泄露
 GIN_MODE="debug"
 ```
 
-## Go 依赖
 
-本项目使用[govendor](https://github.com/kardianos/govendor)管理依赖，以上描述的依赖已经提交到仓库之中。
-下面是你想后期修改依赖的准备工作
-
-```shell
-go get -u github.com/kardianos/govendor
-govendor init
-```
-
-## 运行
-
-```shell
-go run main.go
-```
 
 项目运行后启动在3000端口（可以修改，参考gin文档)
