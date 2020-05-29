@@ -20,7 +20,7 @@ type Comment struct {
 func BuildComment(item model.Comment, uid uint) Comment {
 	var flog uint
 	flog = 0
-	if uid == item.UserID || uid == 1 {
+	if uid == item.UserID {
 		flog = 1
 	}
 	UserURL, UserName := item.GetUserURL()
